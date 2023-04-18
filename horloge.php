@@ -14,9 +14,6 @@
 
     </div>
     <script>
-        function refresh(){
-            setTimeout('showDate()',1000);
-        }
         function showDate(){
         let horloge = document.querySelector(".horloge");
         let now = new Date();
@@ -26,7 +23,7 @@
         let p = document.createElement("p");
         let time=heure+':'+minute+':'+seconde;
         horloge.innerHTML=time;
-        refresh();
+        setTimeout('showDate()',1000);
     }
     </script>
 </body>
