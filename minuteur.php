@@ -8,28 +8,30 @@
     <title>Document</title>
 </head>
 <div class="minuteur">
-        <input id="heure" type="text">
-        <label for="heure">heure</label>
-        <input id="minute" type="text">
-        <label for="minute">minute</label>
-        <input id="seconde" type="text">
-        <label for="seconde">seconde</label><br>
-        <button id="go" type="submit" name="go">Go</button>
+    <input id="heure" type="text">
+    <label for="heure">heure</label>
+    <input id="minute" type="text">
+    <label for="minute">minute</label>
+    <input id="seconde" type="text">
+    <label for="seconde">seconde</label><br>
+    <button id="go" type="submit" name="go">Go</button>
 </div>
 
 <body>
     <script>
+       
         let btn = document.querySelector("button");
         btn.addEventListener("click", () => {
-                const departMinutes = document.getElementById("minute").value;
-                const departHeures = document.getElementById("heure").value;
-                const departSec = document.getElementById("seconde").value;
-                let time = departHeures * 3600 + departMinutes * 60 + departSec;
-                // console.log(time)
+            const departMinutes = document.getElementById("minute").value;
+            const departHeures = document.getElementById("heure").value;
+            const departSec = document.getElementById("seconde").value;
+            let time = departHeures * 3600 + departMinutes * 60 + departSec;
+            // console.log(time)
 
-            if (time === 0) { console.log("woop");
-    console.log("Le minuteur est terminé!");}
-            else {
+            if (time === 0) {
+                console.log("woop");
+                console.log("Le minuteur est terminé!");
+            } else {
                 // e.preventDefault();
                 let minuteur = document.querySelector(".minuteur");
                 let timerElement = document.createElement("p");
@@ -56,12 +58,14 @@
                     time = time <= 0 ? 0 : time - 1;
                     console.log(time);
                 }, 1000);
-                
 
-            } 
+
+            }
         })
     </script>
 
 </body>
 
 </html>
+
+<!--  -->
