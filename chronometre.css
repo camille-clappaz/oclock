@@ -1,0 +1,54 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    font-size: 100px;
+    background-color: var(--main-bg-color);
+    position: relative;
+    transition: all ease 0.2s;
+}
+main{
+    height: 70vh;
+}
+
+.chronometre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#chrono {
+    text-align: center;
+    font-family: monospace;
+    color: #fff;
+    font-size: 150px;
+
+}
+
+button {
+   width: 20vw;
+   height: 15vh;
+   font-size: large;
+    font-family: monospace;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: #1e1f26;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
