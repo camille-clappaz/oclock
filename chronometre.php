@@ -22,7 +22,7 @@
 
     </div>
     </main>
-   <script src="chrono.js"></script>
+    <script src="chrono.js"></script>
     <?php 
     require("footer.php")
 ?>

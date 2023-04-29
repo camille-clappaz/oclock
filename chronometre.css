@@ -7,17 +7,21 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 80vh;
     align-items: center;
     font-size: 100px;
     background-color: var(--main-bg-color);
     position: relative;
     transition: all ease 0.2s;
 }
-main{
-    height: 70vh;
-}
 
+  
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            
+  }
 .chronometre {
     display: flex;
     flex-direction: column;
@@ -51,4 +55,4 @@ button {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-}
+} 
